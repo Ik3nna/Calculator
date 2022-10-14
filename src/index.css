@@ -12,11 +12,12 @@
   --delAndResetKeyShadow: hsl(224, 28%, 35%);
   --equalSignAndToggle: hsl(6, 63%, 50%);
   --equalSignShadow: hsl(6, 70%, 34%);
-  --equalSignHover: hsl(30, 25%, 89%);
-  --equalSignShadow: hsl(28, 16%, 65%);
+  --keyBackground: hsl(30, 25%, 89%);
+  --keyShadow: hsl(28, 16%, 65%);
 
   --text: hsl(221, 14%, 31%);
   --otherTexts: hsl(0, 0%, 100%);
+  --equalSignText: hsl(0, 0%, 100%);
 }
 .theme2 {
   --mainBackground: hsl(0, 0%, 90%);
@@ -27,11 +28,12 @@
   --delAndResetKeyShadow: hsl(185, 58%, 25%);
   --equalSignAndToggle: hsl(25, 98%, 40%);
   --equalSignShadow: hsl(25, 99%, 27%);
-  --equalSignHover: hsl(45, 7%, 89%);
-  --equalSignShadow: hsl(35, 11%, 61%);
+  --keyBackground: hsl(45, 7%, 89%);
+  --keyShadow: hsl(35, 11%, 61%);
 
   --text: hsl(221, 14%, 31%);
   --otherTexts: hsl(0, 0%, 100%);
+  --equalSignText: hsl(0, 0%, 100%);
 }
 .theme3 {
   --mainBackground: hsl(268, 75%, 9%);
@@ -42,8 +44,8 @@
   --delAndResetKeyShadow: hsl(285, 91%, 52%);
   --equalSignAndToggle: hsl(176, 100%, 44%);
   --equalSignShadow: hsl(177, 92%, 70%);
-  --equalSignHover: hsl(268, 47%, 21%);
-  --equalSignShadow: hsl(290, 70%, 36%);
+  --keyBackground: hsl(268, 47%, 21%);
+  --keyShadow: hsl(290, 70%, 36%);
 
   --text: hsl(52, 100%, 62%);
   --otherTexts: hsl(0, 0%, 100%);
@@ -53,5 +55,70 @@
 body {
   font-family: 'League Spartan', sans-serif;
   font-size: 32px;
+  background-color: var(--mainBackground);
+}
+
+
+
+/* Header */
+header {
+  width: 400px;
+}
+header p {
+  margin-right: auto;
+  color: var(--otherTexts);
+}
+.theme {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+
+/* Screen Input */
+input {
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: var(--screenBackground);
+  outline: none;
+  border: none;
+  color: var(--otherTexts);
+}
+
+
+
+/* Button Container */
+.wrapper {
+  width: 400px;
+  background-color: var(--toggleAndKeypadBackground);
+  border-radius: 10px;
+  margin: auto;
+}
+button {
+  width: 70px !important;
+  background-color: var(--keyBackground) !important;
+  border: none !important;
+  outline: none !important;
+  color: var(--text) !important;
+  font-weight: 700 !important;
+  box-shadow: 0 3px var(--keyShadow) !important;
+}
+button:hover {
   
+}
+.del, .reset {
+  background-color: var(--delAndResetKey) !important;
+  text-transform: uppercase;
+  box-shadow: 0px 3px var(--delAndResetKeyShadow) !important;
+  color: var(--otherTexts) !important;
+}
+.equal {
+  background-color: var(--equalSignAndToggle) !important;
+  text-transform: uppercase;
+  color: var(--equalSignText) !important;
+  box-shadow: 0px 3px var(--equalSignShadow) !important;
+}
+.row:last-child button {
+  width: 162px !important;
 }
