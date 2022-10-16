@@ -5,7 +5,9 @@ function Screen () {
 
     return(
         <Container className="d-flex justify-content-center align-items-center">
-            <input type="text" readOnly />
+            <div className="result">
+                <p></p>
+            </div>
         </Container>
     );
 }
