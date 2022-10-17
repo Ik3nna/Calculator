@@ -25,7 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-screencapture-localhost-3000-2022-10-17-16_19_58.png
+![screencapture-localhost-3000-2022-10-17-16_19_58](https://user-images.githubusercontent.com/101594456/196217510-4bd99f9c-6934-4ecd-ae9f-4e10a914d474.png)
+
+
 ### Links
 
 - Solution URL: https://github.com/Ik3nna/Calculator
