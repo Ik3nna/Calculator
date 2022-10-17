@@ -165,6 +165,9 @@ button:hover {
     max-width: 85vw;
     width: 100%;
   }
+  .numbers {
+    right: 3%;
+  }
   button {
     width: 105% !important;
   }
