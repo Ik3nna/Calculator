@@ -123,3 +123,17 @@ button:hover {
 .row:last-child button {
   width: 162px !important;
 }
+
+
+@media (max-width: 575px) {
+  header, .result, .wrapper {
+    max-width: 85vw;
+    width: 100%;
+  }
+  button {
+    width: 105% !important;
+  }
+  .row:last-child button {
+    width: 103% !important;
+  }
+}
